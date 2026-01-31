@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurfaceVariant">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:paddingVertical="8dp">
+
+                <!-- 通知设置项 -->
+                <RelativeLayout
+                    android:id="@+id/notification_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:background="?attr/selectableItemBackground">
+
+                    <ImageView
+                        android:id="@+id/icon_notification"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_preview"
+                        android:tint="?attr/colorPrimary"
+                        android:contentDescription="防录屏" />
+
+                    <TextView
+                        android:id="@+id/title_notification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/icon_notification"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="16dp"
+                        android:text="防录屏"
+                        android:textSize="16sp"
+                        android:textColor="?attr/colorOnSurface"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.materialswitch.MaterialSwitch
+                        android:id="@+id/fanglu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <!-- 深色模式设置项 -->
+                <RelativeLayout
+                    android:id="@+id/dark_mode_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:background="?attr/selectableItemBackground">
+
+                    <ImageView
+                        android:id="@+id/icon_dark_mode"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_perm_data_setting"
+                        android:tint="?attr/colorPrimary"
+                        android:contentDescription="兼容模式图标" />
+
+                    <TextView
+                        android:id="@+id/title_dark_mode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/icon_dark_mode"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="16dp"
+                        android:text="兼容模式"
+                        android:textSize="16sp"
+                        android:textColor="?attr/colorOnSurface"
+                        android:textStyle="normal" />
+                        
+                    <com.google.android.material.materialswitch.MaterialSwitch
+                        android:id="@+id/jianron"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/aa3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:background="?attr/selectableItemBackground">
+
+                    <ImageView
+                        android:id="@+id/aaa3"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_autofps"
+                        android:tint="?attr/colorPrimary"
+                        android:contentDescription="兼容模式帧率图标" />
+
+                    <TextView
+                        android:id="@+id/aaa31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/aaa3"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="16dp"
+                        android:text="兼容模式帧率"
+                        android:textSize="16sp"
+                        android:textColor="?attr/colorOnSurface"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/fpsxuan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:text="60FPS"/>
+
+                </RelativeLayout>
+                
+                <!-- 自动更新设置项 -->
+                <RelativeLayout
+                    android:id="@+id/agn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:background="?attr/selectableItemBackground">
+
+                    <ImageView
+                        android:id="@+id/gn4"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_touch"
+                        android:tint="?attr/colorPrimary"/>
+
+                    <TextView
+                        android:id="@+id/gn4t"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/gn4"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="16dp"
+                        android:text="触摸更新频率"
+                        android:textSize="16sp"
+                        android:textColor="?attr/colorOnSurface"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/tgxxz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:text="24"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
